@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "134636365681",
+    "firebase_url": "https://flash-chat-f6e73.firebaseio.com",
+    "project_id": "flash-chat-f6e73",
+    "storage_bucket": "flash-chat-f6e73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134636365681:android:610b5b9110c62cb17378d0",
+        "android_client_info": {
+          "package_name": "alvim.andre.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134636365681-sgip93jsomomgmqb0g5ibluc031sfhh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEoxupFJ3ogM_rmYOWcrguDfWH5sGtUoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134636365681-sgip93jsomomgmqb0g5ibluc031sfhh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
