@@ -34,19 +34,6 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  /*void getMessages() async {
-    final messages = await _firestore.collection('messages').getDocuments();
-    for (var message in messages.documents) {
-
-    }
-  }*/
-
-  void messagesStream() async {
-    await for(var snapshot in _firestore.collection('messages').snapshots()) {
-
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,6 +65,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     ),
                   );
                 }
+
                 final messages = snapshot.data.documents;
                 List<Text> messageWidgets = [];
                 for (var message in messages) {
@@ -88,8 +76,10 @@ class _ChatScreenState extends State<ChatScreen> {
                   messageWidgets.add(messageWidget);
                 }
 
-                return Column(
-                  children: messageWidgets,
+                return Expanded(
+                  child: ListView(
+                    children: messageWidgets,
+                  ),
                 );
               },
             ),
